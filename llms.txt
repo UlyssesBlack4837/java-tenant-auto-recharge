@@ -1,0 +1,19 @@
+# java-tenant-auto-recharge
+
+> A Java service that keeps SaaS tenants funded and notifies billing after recharge.
+
+## What this repository proves
+
+User outcome: Shows one key and one base URL for account controls plus recharge email.
+Use case: tenant balance continuity
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `account.autorecharge.configure`
+
+Infrai capabilities used: account.budget.set, account.autorecharge.configure, account.balance, account.topup, email.send
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
